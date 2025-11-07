@@ -1,19 +1,22 @@
 [project]
 name = "systemd"
 version = "0.1.0"
-description = ""
+description = "Sistema Doa+"
 authors = [
-    {name = "Gustavo Higuti",email = "gustavo.france@gmail.com"}
+    {name = "Gustavo Higuti", email = "gustavo.france@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "flask (>=3.1.2,<4.0.0)",
-    "flask-sqlalchemy (>=3.1.1,<4.0.0)",
-    "peewee (>=3.18.3,<4.0.0)",
-    "python-dotenv (>=1.2.1,<2.0.0)"
+    "flask>=3.1.2,<4.0.0",
+    "flask-sqlalchemy>=3.1.1,<4.0.0",
+    "python-dotenv>=1.2.1,<2.0.0",
+    "psycopg2-binary>=2.9.11,<3.0.0"
 ]
 
+[tool.poetry]
+# Desabilita package mode para apenas instalar dependências
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
