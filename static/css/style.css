@@ -1,0 +1,65 @@
+/* ============================
+   Estilo geral do Sistema Doa+
+   ============================ */
+
+body {
+  background-color: #F8FAFC;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+  color: #004080;
+}
+
+/* Botões */
+.btn-primary {
+  background-color: #004080;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #003366;
+}
+
+.btn-success {
+  background-color: #004080;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #003366;
+}
+
+/* Links */
+.text-link {
+  color: #004080;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.form-select {
+  border-radius: 8px;
+}
+
+/* Layout de centralização */
+.full-height {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

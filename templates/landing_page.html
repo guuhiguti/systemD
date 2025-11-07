@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doa+ - Plataforma de Gestão Solidária</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Doa+</a>
+        <div>
+          <a href="{{ url_for('auth.login') }}" class="btn btn-outline-light me-2">Login</a>
+          <a href="{{ url_for('auth.register') }}" class="btn btn-light text-primary">Cadastrar</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SOBRE O SISTEMA / RESUMO -->
+    <section class="py-5 bg-white text-center">
+      <div class="container">
+        <h1 class="fw-bold mb-3">Plataforma Doa+</h1>
+        <p class="lead mb-4">
+          O <strong>Doa+</strong> é uma plataforma digital desenvolvida para <strong>Organizações da Sociedade Civil (OSCs)</strong>,
+          voltadas ao apoio de famílias em situação de vulnerabilidade socioeconômica.  
+          Criada a partir da experiência do <strong>Instituto Ser Solidário</strong>, a iniciativa busca otimizar o
+          <strong>gerenciamento de doações e demandas sociais</strong>, promovendo uma distribuição mais eficiente e transparente dos recursos.
+        </p>
+        <img src="https://cdn-icons-png.flaticon.com/512/3468/3468373.png" width="220" alt="solidariedade" class="img-fluid mb-4">
+      </div>
+    </section>
+
+    <!-- OBJETIVO DO SISTEMA -->
+    <section class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Objetivo do Sistema</h2>
+        <p class="lead">
+          Facilitar o <strong>cruzamento inteligente entre as demandas das famílias</strong> e os
+          <strong>recursos disponíveis</strong> nas instituições, garantindo uma gestão eficiente,
+          justa e transparente.  
+          O sistema também gera <strong>relatórios e históricos</strong> que ajudam na prestação de contas
+          e na análise do impacto social gerado.
+        </p>
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" width="200" alt="objetivo social" class="img-fluid mt-4">
+      </div>
+    </section>
+
+    <!-- JUSTIFICATIVA / APLICAÇÃO -->
+    <section class="py-5 bg-white">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Justificativa e Aplicação</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="card-img-top p-4" alt="colaboração social">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Por que o Doa+?</h5>
+                <p class="card-text">
+                  Durante a pandemia da Covid-19, o Instituto Ser Solidário percebeu a dificuldade em organizar
+                  atendimentos e doações, realizados de forma descentralizada.  
+                  O <strong>Doa+</strong> surge como resposta a essa necessidade — centralizando cadastros,
+                  doações e registros em um único sistema.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="https://cdn-icons-png.flaticon.com/512/3176/3176366.png" class="card-img-top p-4" alt="Instituto Ser Solidário">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Aplicação Prática</h5>
+                <p class="card-text">
+                  A plataforma organiza e categoriza as doações recebidas — registrando tipo, quantidade e disponibilidade dos itens.
+                  Assim, o Instituto Ser Solidário consegue realizar <strong>atendimentos mais ágeis e direcionados</strong>, fortalecendo
+                  a sustentabilidade organizacional e os <strong>Objetivos de Desenvolvimento Sustentável (ODS)</strong>:
+                  Educação de Qualidade (ODS 4), Redução das Desigualdades (ODS 10) e Parcerias (ODS 17).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METODOLOGIA / TECNOLOGIAS -->
+    <section class="py-5 bg-light text-center">
+      <div class="container">
+        <h2 class="fw-bold mb-4">Metodologia e Tecnologias</h2>
+        <p class="lead mb-5">
+          O desenvolvimento segue o programa <strong>Jovem Conectado</strong>, que une tecnologia e voluntariado,
+          estimulando o protagonismo juvenil e o trabalho colaborativo.  
+          O sistema utiliza ferramentas acessíveis e eficientes para garantir estabilidade e escalabilidade.
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-md-3 mb-3">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" width="60" alt="Python">
+                <h5 class="mt-3">Python + Flask</h5>
+                <p class="small text-muted">Base do backend e controle de rotas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" width="60" alt="Bootstrap">
+                <h5 class="mt-3">Bootstrap 5</h5>
+                <p class="small text-muted">Interface moderna e responsiva.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <img src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" width="60" alt="Banco de dados">
+                <h5 class="mt-3">SQLite / PostgreSQL</h5>
+                <p class="small text-muted">Armazenamento de dados seguro e escalável.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINI TUTORIAL -->
+    <section class="py-5 bg-white">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Como Usar o Sistema</h2>
+        <p class="lead mb-5">
+          O Doa+ foi pensado para ser simples e intuitivo.  
+          Em poucos passos, você pode se cadastrar, acessar e começar a doar.
+        </p>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <span class="badge bg-primary rounded-circle p-3 fs-5">1</span>
+                <h5 class="mt-3">Cadastre-se</h5>
+                <p class="small text-muted">Crie sua conta como colaborador ou instituição.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <span class="badge bg-primary rounded-circle p-3 fs-5">2</span>
+                <h5 class="mt-3">Faça Login</h5>
+                <p class="small text-muted">Acesse sua conta com e-mail e senha cadastrados.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <span class="badge bg-primary rounded-circle p-3 fs-5">3</span>
+                <h5 class="mt-3">Escolha uma Categoria</h5>
+                <p class="small text-muted">Selecione a área que deseja apoiar: alimentação, saúde, educação, etc.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <span class="badge bg-primary rounded-circle p-3 fs-5">4</span>
+                <h5 class="mt-3">Selecione o Item</h5>
+                <p class="small text-muted">Escolha o item disponível e registre sua doação com apenas um clique!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <a href="{{ url_for('auth.register') }}" class="btn btn-success btn-lg me-2">Cadastrar-se</a>
+          <a href="{{ url_for('auth.login') }}" class="btn btn-primary btn-lg">Fazer Login</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 bg-primary text-white text-center">
+      <p class="mb-0">&copy; 2025 Doa+ | Plataforma Digital desenvolvida para Instituições Sociais</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
