@@ -291,17 +291,6 @@ files = [
 ]
 
 [[package]]
-name = "peewee"
-version = "3.18.3"
-description = "a little orm"
-optional = false
-python-versions = "*"
-groups = ["main"]
-files = [
-    {file = "peewee-3.18.3.tar.gz", hash = "sha256:62c3d93315b1a909360c4b43c3a573b47557a1ec7a4583a71286df2a28d4b72e"},
-]
-
-[[package]]
 name = "psycopg2-binary"
 version = "2.9.11"
 description = "psycopg2 - Python-PostgreSQL Database Adapter"
@@ -522,4 +511,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.13"
-content-hash = "4dcbbc8c41d2ba424a16e911e870a8212841e38fb0a177d43e4fa7276cb20bf7"
+content-hash = "e6db40c313a9067073645319b4f57c5eb4b4df3a2bfbbc0213381575a5898a5f"
